@@ -7,6 +7,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">User Experience Questionnaire</h1>
+        <p id="description">We value your feedback and would love to hear about your experience.</p>
+    </header>
+    <main>
+        <form action="" method="post" id="survey-form">
+            <section>
+                <label for="name" id="name-label">Name: <input name="name" type="text" id="name" placeholder="Enter your name" required></label>
+                <label for="email" id="email-label">Email: <input name="email" type="email" id="email" placeholder="Enter your email" required></label>
+                <label for="number" id="number-label">Phone number: <input name="number" type="number" id="number" min="16" max="120" placeholder="Age"></label>
+            </section>
+            <section>
+                <p>Would you recommend our product to a friend?</p>
+                <label for="strongly-yes">Strongly yes<input id="strongly-yes" name="select" value="yes" type="radio"></label>
+                <label for="maybe">Maybe<input id="maybe" name="select" value="maybe" type="radio"></label>
+                <label for="probably-no">Probably no<input id="probably-no" name="select" value="no" type="radio"></label>
+            </section>
+            <section>
+                <p>What is your favorite feature of our product?</p>
+                <select name="options" id="dropdown">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </section>
+            <section>
+                <label>
+                    <input type="checkbox" name="improvement" value="quality">
+                    Improve product quality
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="pricing">
+                    Offer better pricing
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="features">
+                    Add more features
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="usability">
+                    Make it more user-friendly
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="support">
+                    Provide better customer support
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="durability">
+                    Increase durability and reliability
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="delivery">
+                    Speed up delivery times
+                </label>
+                <label>
+                    <input type="checkbox" name="improvement" value="design">
+                    Improve product design or aesthetics
+                </label>
+            </section>
+            <div>
+                <label for="text=area">
+                    <textarea name="textarea" id="text=area"></textarea>
+                </label>
+            </div>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </main>
 </body>
 </html>
